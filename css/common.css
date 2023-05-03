@@ -41,6 +41,7 @@ body{
     background: url('../images/logo.png') no-repeat center;
 }
 
+
 .gnb {
     display: flex;
     font-size: 16px;
@@ -80,3 +81,89 @@ body{
     background-color: tomato;
     color: #fff;
 }
+
+/* slide */
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.slide .item img {
+    display: block;
+}
+
+/* contents */
+.contents{
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.tab{
+    flex: 1;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.tab::after {
+    content: '';
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    height: 3px; ;
+    background-color: tomato;
+}
+
+.tab section{
+    position: relative;
+    flex: 1;
+}
+
+.tab section h2 a {
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    background-color: #eee;
+}
+
+.tab section.on h2 a {
+    background-color: tomato;
+    color: #fff;
+}
+
+.tab section ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.tab section .gallery{
+    display: flex;
+    width: ;
+}
+
+.banner{
+    flex: 1;
+    background-color: red;
+}
+
+.link{
+    flex: 1;
+    background-color: blueviolet;
+}
+
